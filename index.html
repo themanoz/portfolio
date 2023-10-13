@@ -31,47 +31,83 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="greetings">
-            Hello World! <span>&#128075;</span>
-        </div>
-    
-        <div class="author-intro">
-            <h1>I am MANOJ KUMAR,</h1>
-        </div>
-    
-        <div class="portfolio">
-            <h2>Welcome to my portfolio</h2>
-        </div>
-    
-        <div class="download-resume">
-            <button>
-                <a href="BONALA_MANOJ_KUMAR.pdf">&#128196; Download Resume</a>
-            </button>
+    <main class="flex min-h-screen flex-col items-center justify-between p-24">
+        <div class="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+            <div class="container mx-auto max-w-screen-lg text-center">
+                <div class="greetings text-2xl mb-4">
+                    Hello World! <span class="text-4xl">&#128075;</span>
+                </div>
+
+                <div class="author-intro">
+                    <h1 class="text-4xl font-bold">I am MANOJ KUMAR</h1>
+                </div>
+
+                <div class="portfolio">
+                    <h2 class="text-3xl mt-4">Welcome to my portfolio</h2>
+                </div>
+
+                <div class="download-resume mt-4">
+                    <a href="BONALA_MANOJ_KUMAR.pdf" class="bg-blue-500 text-white px-4 py-2 rounded text-xl"
+                        role="button">&#128196; Download Resume</a>
+                </div>
+
+                <div class="send-mail text-2xl mt-4">
+                    <a href="mailto:manojkumarbonala3@gmail.com">&#128231; manojkumarbonala3@gmail.com</a>
+                </div>
+
+                <div class="socials mt-4">
+                    <nav>
+                        <ul class="social-links">
+                            <li class="inline mr-4">
+                                <a href="https://twitter.com/the_manoz" class="text-blue-500">Twitter</a>
+                            </li>
+                            <li class="inline mr-4">
+                                <a href="https://www.linkedin.com/in/manojkumarbonala/" class="text-blue-500">Linkedin</a>
+                            </li>
+                            <li class="inline mr-4">
+                                <a href="https://github.com/themanoz" class="text-blue-500">Github</a>
+                            </li>
+                            <li class="inline">
+                                <a href="https://www.instagram.com/the.manoz/" class="text-blue-500">Instagram</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
 
-        <div class="send-mail">
-            <a href="mailto:manojkumarbonala3@gmail.com">&#128231; manojkumarbonala3@gmail.com</a>
+        <!-- Project Section -->
+        <div class="container mx-auto max-w-screen-lg mt-8">
+            <h2 class="text-3xl font-bold mb-4">Projects</h2>
+
+            <div class="project-container flex flex-wrap justify-between">
+                <div class="project mb-6 flex-grow w-full lg:w-1/2 pr-4">
+                    <h3 class="text-2xl font-semibold">CICD Pipeline and Container Deployment of Todo Node.js App on AWS EC2
+                    </h3>
+                    <p>Implemented CICD Pipeline for Todo Node.js App using Jenkins and AWS EC2</p>
+                    <!-- Add more project details here -->
+                </div>
+
+                <div class="project mb-6 flex-grow w-full lg:w-1/2 pl-4">
+                    <h3 class="text-2xl font-semibold">Complaint Handling Management System</h3>
+                    <p>Developed dynamic website using HTML, CSS, JavaScript, PHP, and MySQL with custom UI/UX and backend.
+                    </p>
+                    <!-- Add more project details here -->
+                </div>
+
+                <div class="project mb-6 flex-grow w-full lg:w-1/2 pr-4">
+                    <h3 class="text-2xl font-semibold">AWS Usage Tracker</h3>
+                    <p>An AWS Usage Tracker is a tool that allows you to monitor and analyze your AWS usage and cost.</p>
+                    <!-- Add more project details here -->
+                </div>
+
+                <div class="project mb-6 flex-grow w-full lg:w-1/2 pl-4">
+                    <h3 class="text-2xl font-semibold">Secure One Health</h3>
+                    <p>Geo-based location system</p>
+                    <!-- Add more project details here -->
+                </div>
+            </div>
         </div>
-        
-        <div class="socials">
-            <nav>
-                <ul class="social-links">
-                    <li>
-                        <a href="https://twitter.com/the_manoz">Twitter</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/manojkumarbonala/">Linkedin</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/themanoz">Github</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/the.manoz/">Instagram</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
